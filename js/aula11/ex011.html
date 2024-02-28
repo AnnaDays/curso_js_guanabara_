@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual País?</title>
+    <style>
+        h1{
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        input{
+            background-color: rgb(172, 247, 212);
+            border: 2px solid #000000; 
+            padding: 8px;
+            border-radius: 4px;
+        }
+        #button{
+            background-color: rgb(46, 50, 50);
+            color: white;
+        }
+        #button:hover{
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        div#ok {
+            background: rgba(0, 247, 148, 0.482);
+            margin: 0 auto;
+            margin-bottom: 10px;
+            width: 300px;
+            height: 140px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        div#result{
+            font: normal 15px Arial;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+  <div id="ok">
+    <h1>Em qual País você mora?</h1>
+    <input type="text" name="txtPais" id="txtPais" placeholder="Digite o nome do País">
+    <input type="button" value="Enviar" onclick="pais()" id="button">
+    <div id="result">
+
+    </div>
+  </div>
+    <script>
+        function pais(){
+            var pais = document.querySelector('input#txtPais').value;
+            var resultado = document.querySelector('div#result');
+            if (pais == 'Brasil'){
+                resultado.innerHTML += 'Que legal, você é <strong>Brasileiro</strong>!!'
+            }  else {
+                resultado.innerHTML = 'Que legal, você é <strong>Estrangeiro</strong>!!'
+            }
+        }
+    </script>
+</body>
+</html>
