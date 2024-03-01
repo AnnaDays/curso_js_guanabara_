@@ -11,7 +11,7 @@ section {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 400px;
+    width: 390px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.296);
 }
@@ -21,8 +21,8 @@ footer {
     font-style: italic;
 }
 #txttabuada {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 180px;
     overflow: auto;
 }
 #botao{
